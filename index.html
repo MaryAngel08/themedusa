@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheMedusa — Website Designer</title>
+<meta name="description" content="TheMedusa is Mary's web design studio — cinematic sites, considered interfaces, and builds that actually ship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Unbounded:wght@500;600;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <filter id="sharpen">
+    <feConvolveMatrix order="3" preserveAlpha="true"
+      kernelMatrix="0 -0.5 0 -0.5 3 -0.5 0 -0.5 0" />
+  </filter>
+</svg>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+<div class="site-shell">
+  <span class="corner tl"></span>
+  <span class="corner tr"></span>
+  <span class="corner bl"></span>
+  <span class="corner br"></span>
+
+  <div class="site-chrome">
+    <div class="topbar">
+      <a class="wordmark fx-shimmer-boot" href="#top">TheMedusa<span>// Website Designer</span></a>
+      <nav class="top-nav mono">
+        <a class="nav-link" href="#about">ABOUT</a>
+        <span class="nav-sep">//</span>
+        <a class="nav-link" href="#work">WORK</a>
+        <span class="nav-sep">//</span>
+        <a class="nav-link" href="#services">SERVICES</a>
+        <span class="nav-sep">//</span>
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </nav>
+      <div class="topbar-actions">
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span>
+        </label>
+        <a class="cta-link" href="#contact">Start a Project</a>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a class="nav-link" href="#about">ABOUT</a>
+      <a class="nav-link" href="#work">WORK</a>
+      <a class="nav-link" href="#services">SERVICES</a>
+      <a class="nav-link" href="#contact">CONTACT</a>
+    </div>
+  </div>
+
+<div class="stage" id="top">
+  <div class="frame">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+
+    <div class="frame-bg">
+      <picture>
+        <source type="image/avif" srcset="assets/bg-1280.avif 1280w, assets/bg-1920.avif 1920w, assets/bg-2560.avif 2560w" sizes="100vw">
+        <source type="image/webp" srcset="assets/bg-1280.webp 1280w, assets/bg-1920.webp 1920w, assets/bg-2560.webp 2560w" sizes="100vw">
+        <img src="assets/bg.jpg" alt="" width="1920" height="1071" fetchpriority="high" decoding="async" aria-hidden="true">
+      </picture>
+    </div>
+
+    <div class="body-grid">
+      <aside class="sidebar">
+        <div class="sidebar-panel">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <div class="sidebar-intro hud-box">
+            <div class="detail-head">
+              <span class="mono">STUDIO // </span><span class="num">THEMEDUSA</span>
+            </div>
+            <h2 class="detail-intro-title fx-shimmer">Building the <br class="hero-title-br" aria-hidden="true">web's next <br class="hero-title-br" aria-hidden="true">liquid-glass <br class="hero-title-br" aria-hidden="true">era.</h2>
+            <p class="detail-intro-copy">TheMedusa designs and <br class="hero-copy-br" aria-hidden="true">builds cinematic websites — <br class="hero-copy-br" aria-hidden="true">considered interfaces, clean code, <br class="hero-copy-br" aria-hidden="true">and sites that hold up <br class="hero-copy-br" aria-hidden="true">on any screen.</p>
+          </div>
+
+          <div class="sidebar-stack hud-box">
+            <div class="label">STACK</div>
+            <div class="tag-row">
+              <span class="tag">DESIGN</span>
+              <span class="tag">FRONT-END</span>
+              <span class="tag">MOTION</span>
+              <span class="tag">BRAND</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="center">
+        <div class="particles" id="particles"></div>
+        <div class="eye-glow eye-glow-l"></div>
+        <div class="eye-glow eye-glow-r"></div>
+        <div class="figure">
+          <picture>
+            <source type="image/avif" srcset="assets/figure-480.avif 480w, assets/figure-857.avif 857w" sizes="(max-width: 980px) 92vw, 40vw">
+            <source type="image/webp" srcset="assets/figure-480.webp 480w, assets/figure-857.webp 857w" sizes="(max-width: 980px) 92vw, 40vw">
+            <img src="assets/figure.png" alt="TheMedusa studio figure" width="857" height="478" fetchpriority="high" decoding="async">
+          </picture>
+          <img class="figure-bloom" src="assets/figure.png" alt="" width="857" height="478" aria-hidden="true">
+        </div>
+      </div>
+
+      <div class="detail" id="hero-detail">
+        <div class="detail-panel">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+        <div class="detail-intro">
+          <div class="hud-box">
+            <div class="label">WORKING_STYLE</div>
+            <p class="detail-intro-copy">Based remotely, working <br class="hero-copy-br" aria-hidden="true">with clients across <br class="hero-copy-br" aria-hidden="true">time zones — <br class="hero-copy-br" aria-hidden="true">always up for a <br class="hero-copy-br" aria-hidden="true">good brief.</p>
+          </div>
+
+          <div class="hud-box">
+            <div class="section-flag">
+              <span class="bar"></span>
+              <div>
+                <h2 class="fx-glitch">CURRENT_STATUS</h2>
+                <div class="active-status"><span class="dot"></span><span class="fx-typewriter" data-text="Available for new projects"></span></div>
+                <p class="sidebar-note">Responds within 24h</p>
+                <p class="sidebar-clock fx-glitch" id="system-clock">SYSTEM_STATUS // --:--:--</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="mary-widget hud-box" href="#contact" aria-label="Have a question? Talk with Mary">
+            <div class="label">Have a question?</div>
+            <div class="mary-widget-row">
+              <picture>
+                <source type="image/avif" srcset="assets/about-medusa-80.avif">
+                <source type="image/webp" srcset="assets/about-medusa-80.webp">
+                <img class="mary-widget-avatar" src="assets/about-medusa.jpg" alt="" width="36" height="36" decoding="async">
+              </picture>
+              <div>
+                <p class="mary-widget-name">Talk with Mary</p>
+                <p class="mary-widget-role">Website designer</p>
+              </div>
+            </div>
+            <span class="mary-widget-book">Start a Project</span>
+          </a>
+        </div>
+
+        <div class="detail-project">
+          <div class="detail-head">
+            <span class="mono" id="hero-code"></span><span class="num" id="hero-num"></span>
+          </div>
+
+          <div class="field">
+            <div class="label">ROLE</div>
+            <div class="value" id="hero-role"></div>
+          </div>
+
+          <div class="field">
+            <div class="label">DESCRIPTION</div>
+            <div class="value" id="hero-desc"></div>
+          </div>
+
+          <div class="field">
+            <div class="label">TAGS</div>
+            <div class="tag-row" id="hero-tags"></div>
+          </div>
+
+          <div class="visuals">
+            <div class="label">SELECTED WORK</div>
+            <div class="thumbs" id="hero-thumbs">
+              <button type="button" class="thumb" data-work="0" aria-label="Caffè Brasilia">
+                <picture>
+                  <source type="image/avif" srcset="assets/project-caffebrasilia-240.avif 240w, assets/project-caffebrasilia-480.avif 480w" sizes="72px">
+                  <source type="image/webp" srcset="assets/project-caffebrasilia-240.webp 240w, assets/project-caffebrasilia-480.webp 480w" sizes="72px">
+                  <img src="assets/project-caffebrasilia.jpg" alt="" width="72" height="48" loading="lazy" decoding="async">
+                </picture>
+                <span class="thumb-num">01</span>
+              </button>
+              <button type="button" class="thumb" data-work="1" aria-label="Blake">
+                <picture>
+                  <source type="image/avif" srcset="assets/project-blake-240.avif 240w, assets/project-blake-480.avif 480w" sizes="72px">
+                  <source type="image/webp" srcset="assets/project-blake-240.webp 240w, assets/project-blake-480.webp 480w" sizes="72px">
+                  <img src="assets/project-blake.png" alt="" width="72" height="48" loading="lazy" decoding="async">
+                </picture>
+                <span class="thumb-num">02</span>
+              </button>
+              <button type="button" class="thumb" data-work="3" aria-label="Ember and Vine">
+                <picture>
+                  <source type="image/avif" srcset="assets/project-embervine-240.avif 240w, assets/project-embervine-480.avif 480w" sizes="72px">
+                  <source type="image/webp" srcset="assets/project-embervine-240.webp 240w, assets/project-embervine-480.webp 480w" sizes="72px">
+                  <img src="assets/project-embervine.png" alt="" width="72" height="48" loading="lazy" decoding="async">
+                </picture>
+                <span class="thumb-num">03</span>
+              </button>
+            </div>
+            <a class="detail-cta" id="hero-link" href="#work">Open case study</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#about">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<section class="band about-band" id="about">
+  <div class="about-shell">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <div class="about-copy reveal">
+      <p class="mono-label about-eyebrow">01 // ABOUT_ME</p>
+      <div class="about-status">
+        <span class="about-status-label">MARY</span>
+        <span class="about-live"><i class="fx-pulse-dot"></i><span class="fx-typewriter" data-text="Active">Active</span></span>
+      </div>
+      <div class="about-bio">
+        <p>I run TheMedusa - a one-person studio for brands that need a website with presence, not another theme with the logo swapped in.</p>
+        <p>My work sits between art direction and the build. I design the system, then I ship it: layout, type, motion, and a front-end that stays fast on a phone.</p>
+        <p>If we work together, you get a site with a point of view and a finish you can click - from the first conversation to a page that's live.</p>
+      </div>
+    </div>
+
+    <div class="about-visual reveal">
+      <figure class="about-card">
+        <figcaption class="about-hud" aria-hidden="true">
+          <div class="about-hud-top">
+            <span>MATERIAL</span>
+          </div>
+          <div class="about-hud-slider">
+            <span class="about-hud-track"><i></i></span>
+            <span>3:0</span>
+          </div>
+          <div class="about-hud-swatches">
+            <button type="button" class="swatch swatch-glass is-on" aria-label="Glass"></button>
+            <button type="button" class="swatch swatch-ice" aria-label="Ice"></button>
+            <button type="button" class="swatch swatch-copper" aria-label="Copper"></button>
+            <button type="button" class="swatch swatch-void" aria-label="Void"></button>
+          </div>
+        </figcaption>
+        <picture>
+          <source type="image/avif" srcset="assets/about-medusa-400.avif 400w, assets/about-medusa-764.avif 764w" sizes="(max-width: 768px) 70vw, 36vw">
+          <source type="image/webp" srcset="assets/about-medusa-400.webp 400w, assets/about-medusa-764.webp 764w" sizes="(max-width: 768px) 70vw, 36vw">
+          <img src="assets/about-medusa.jpg" alt="Cybernetic Medusa portrait" width="400" height="536" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="work">
+  <div class="panel work-panel">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+
+    <div class="band-head reveal">
+      <p class="mono-label">02 // SELECTED_WORK</p>
+      <h2 class="fx-shimmer-once">Sites that hold<br>a clear system.</h2>
+      <p class="lead">A few projects I'm proud of — built around a visual language and a finish you can actually click.</p>
+    </div>
+
+    <div class="work-list reveal">
+      <a class="work-card" href="https://caffebrasilia.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <span class="work-card-media">
+          <picture>
+            <source type="image/avif" srcset="images/work/caffe-brasilia-640.avif 640w, images/work/caffe-brasilia-1024.avif 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+            <source type="image/webp" srcset="images/work/caffe-brasilia-640.webp 640w, images/work/caffe-brasilia-1024.webp 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+            <img src="images/work/caffe-brasilia.jpg" alt="Caffè Brasilia website preview" width="1024" height="576" loading="lazy" decoding="async">
+          </picture>
+        </span>
+        <span class="work-card-body">
+          <span class="work-num">01</span>
+          <span class="work-copy">
+            <span class="work-name">Caffè Brasilia</span>
+            <span class="work-cat">Web design — café and bar, Venezia</span>
+          </span>
+          <span class="work-status is-live fx-glitch-live">● live</span>
+          <svg class="work-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+      <a class="work-card" href="https://blake-salon.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <span class="work-card-media">
+          <picture>
+            <source type="image/avif" srcset="images/work/blake-640.avif 640w, images/work/blake-1024.avif 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+            <source type="image/webp" srcset="images/work/blake-640.webp 640w, images/work/blake-1024.webp 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+            <img src="images/work/blake.png" alt="Blake salon website preview" width="1024" height="576" loading="lazy" decoding="async">
+          </picture>
+        </span>
+        <span class="work-card-body">
+          <span class="work-num">02</span>
+          <span class="work-copy">
+            <span class="work-name">Blake</span>
+            <span class="work-cat">Web design — salon</span>
+          </span>
+          <span class="work-status is-live fx-glitch-live">● live</span>
+          <svg class="work-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+      <a class="work-card" href="https://ctrlaltdesigner.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <span class="work-card-media">
+          <picture>
+            <source type="image/avif" srcset="images/work/ctrlaltdesigner-640.avif 640w, images/work/ctrlaltdesigner-960.avif 960w, images/work/ctrlaltdesigner-1280.avif 1280w" sizes="(max-width: 980px) 92vw, 32vw">
+            <source type="image/webp" srcset="images/work/ctrlaltdesigner-640.webp 640w, images/work/ctrlaltdesigner-960.webp 960w, images/work/ctrlaltdesigner-1280.webp 1280w" sizes="(max-width: 980px) 92vw, 32vw">
+            <img src="images/work/ctrlaltdesigner.png" alt="CtrlAltDesigner website preview" width="1280" height="720" loading="lazy" decoding="async">
+          </picture>
+        </span>
+        <span class="work-card-body">
+          <span class="work-num">03</span>
+          <span class="work-copy">
+            <span class="work-name">CtrlAltDesigner</span>
+            <span class="work-cat">Web design — studio</span>
+          </span>
+          <span class="work-status is-live fx-glitch-live">● live</span>
+          <svg class="work-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="work-soon reveal">
+      <p class="mono-label">COMING SOON</p>
+      <div class="work-soon-list">
+        <article class="work-card work-card--soon">
+          <span class="work-card-media">
+            <picture>
+              <source type="image/avif" srcset="images/work/ember-and-vine-640.avif 640w, images/work/ember-and-vine-1024.avif 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+              <source type="image/webp" srcset="images/work/ember-and-vine-640.webp 640w, images/work/ember-and-vine-1024.webp 1024w" sizes="(max-width: 980px) 92vw, 32vw">
+              <img src="images/work/ember-and-vine.png" alt="Ember and Vine concept preview" width="1024" height="576" loading="lazy" decoding="async">
+            </picture>
+          </span>
+          <span class="work-card-body">
+            <span class="work-num">04</span>
+            <span class="work-copy">
+              <span class="work-name">Ember and Vine</span>
+              <span class="work-cat">Concept design — restaurant</span>
+            </span>
+            <span class="work-status is-soon">○ soon</span>
+          </span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="panel services-panel">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+
+    <div class="band-head reveal">
+      <p class="mono-label">03 // SERVICES</p>
+      <h2>Advanced design<br>behind every brand.</h2>
+      <p class="lead">From the first layout to a site that actually ships — on every screen.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="3" y="3" width="7.5" height="7.5"/>
+          <rect x="13.5" y="3" width="7.5" height="7.5"/>
+          <rect x="3" y="13.5" width="7.5" height="7.5"/>
+          <rect x="13.5" y="13.5" width="7.5" height="7.5"/>
+        </svg>
+        <h3>Web Design &amp; Development</h3>
+        <p>Sites designed and built to ship — cinematic layout, a working page, and a finish that holds up from phone to desktop.</p>
+      </article>
+      <article class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16"/>
+          <path d="M3 8h18"/>
+        </svg>
+        <h3>Interface Design</h3>
+        <p>UI that feels considered — spacing, states, and quiet motion that guides without getting in the way.</p>
+      </article>
+      <article class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 3l1.15 6.2L19 9.5l-5.2 1.8L12 17.5l-1.8-6.2L5 9.5l5.85-.3L12 3z"/>
+          <path d="M18.5 14.5l.45 2.4 2.05.7-2.05.7-.45 2.4-.7-2.05-2.4-.7 2.4-.7.7-2.05z"/>
+        </svg>
+        <h3>Brand Identity</h3>
+        <p>Identity that survives the scroll: color, type, and a digital tone of voice that still looks like you on a phone.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band cta-band">
+  <div class="panel cta-panel">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <div class="cta-bg" aria-hidden="true">
+      <picture>
+        <source type="image/webp" srcset="assets/pulse-wave.webp">
+        <img src="assets/pulse-wave.png" alt="" width="669" height="373" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <p class="cta-band-copy">Ready to start?</p>
+    <a class="cta-link" href="#contact">Let's talk</a>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="panel contact-panel">
+    <div class="contact-inner">
+    <div class="contact-box contact-copy reveal">
+      <div class="contact-copy-top">
+        <p class="mono-label">04 // CONTACT</p>
+        <h2>Let's build something clear.</h2>
+        <p class="lead">If you have a project in mind or just want to say hi, use the form.</p>
+      </div>
+      <div class="contact-copy-foot">
+        <p class="contact-note fx-typewriter" data-text="I read every email.">I read every email.</p>
+        <a class="mail-link" href="mailto:the.medusa@outlook.com">
+          <svg class="mail-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14"/>
+            <path d="M3 7l9 7 9-7"/>
+          </svg>
+          the.medusa@outlook.com
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-box touch-form reveal" id="touch-form" novalidate>
+      <div class="touch-fields">
+        <label class="icon-field">
+          <span class="icon-field-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.2"/>
+              <path d="M5 19c1.2-3.2 3.8-5 7-5s5.8 1.8 7 5"/>
+            </svg>
+            <span class="icon-field-label">Your name</span>
+          </span>
+          <input type="text" name="name" autocomplete="name">
+        </label>
+        <label class="icon-field">
+          <span class="icon-field-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14"/>
+              <path d="M3 7l9 7 9-7"/>
+            </svg>
+            <span class="icon-field-label">Email</span>
+          </span>
+          <input type="email" name="email" placeholder="name@company.com" autocomplete="email" required>
+        </label>
+        <label class="icon-field">
+          <span class="icon-field-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M4 5h16v12H8l-4 3V5z"/>
+            </svg>
+            <span class="icon-field-label">Tell me about your project</span>
+          </span>
+          <textarea name="message" rows="3"></textarea>
+        </label>
+      </div>
+      <button class="touch-send" type="submit">
+        Send message
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </button>
+    </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="panel footer-panel">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <div class="footer-bg footer-pulse" aria-hidden="true">
+      <picture>
+        <source type="image/webp" srcset="assets/pulse-wave.webp">
+        <img src="assets/pulse-wave.png" alt="" width="669" height="373" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <a class="wordmark" href="#top">TheMedusa<span>// Website Designer</span></a>
+    <p class="footer-tagline">Considered design, shipped fast.</p>
+    <nav class="footer-nav mono" aria-label="Footer">
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <a href="#services">SERVICES</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a class="footer-mail" href="mailto:the.medusa@outlook.com">
+      <svg class="footer-mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14"/>
+        <path d="M3 7l9 7 9-7"/>
+      </svg>
+      the.medusa@outlook.com
+    </a>
+    <p>© 2026 THEMEDUSA // WEB DESIGN STUDIO</p>
+  </div>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
