@@ -257,7 +257,7 @@ if (bootLogo) {
 }
 
 const navLinks = [...document.querySelectorAll(".nav-link")];
-const sections = ["about", "work", "services", "contact"]
+const sections = ["about", "tools", "work", "services", "contact"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 
